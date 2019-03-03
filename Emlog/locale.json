@@ -1,0 +1,10 @@
+{
+	"translations": {
+		"de": {
+			"IP-Address": "IP-Adresse",
+			"Meter": "Meter",
+			"Interval": "Intervall",
+			"seconds": "Sekunden"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+"id": "{3413DCFF-D625-4FFD-BC10-601A35AE81FA}",
+  "name": "Emlog",
+  "type": 3,
+  "vendor": "",
+  "aliases": [
+    "Emlog"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "EML"
+}

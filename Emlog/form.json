@@ -1,0 +1,18 @@
+{
+  "elements":
+  [
+	{ "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Address" },
+	{ "type": "Select", "name": "MeterIndex", "caption": "Meter",
+	  "options": [
+		{ "caption": "Meter 1", "value": 1 },
+		{ "caption": "Meter 2", "value": 2 },
+		{ "caption": "Meter 3", "value": 3 }
+	  ]
+	},
+	{ "type": "IntervalBox", "name": "Interval", "caption": "seconds" }
+  ],
+ "actions":
+  [ 
+	{ "type": "Button", "label": "Update", "onClick": "EML_Update($id);" }
+  ]
+}
