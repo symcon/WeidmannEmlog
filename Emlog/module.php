@@ -16,10 +16,10 @@ class Emlog extends IPSModule {
 
 	public function Update() {
 
-		//$data = file_get_contents("http://" . $this->ReadPropertyString("IPAddress") . "/pages/getinformation.php?export&meterindex=" . $this->ReadPropertyInteger("Meter"));
+		$data = file_get_contents("http://" . $this->ReadPropertyString("IPAddress") . "/pages/getinformation.php?export&meterindex=" . $this->ReadPropertyInteger("Meter"));
 		
 		//Data for testing
-		$data = '{"product":"Emlog - Electronic MeterLog","version":1.08,"Zaehlerstand_Bezug":{"Stand180":8206.0674551,"Stand181":8198.35,"Stand182":1.11},"Zaehlerstand_Lieferung":{"Stand280":0,"Stand281":0,"Stand282":0},"Wirkleistung_Bezug":{"Leistung170":1204.52,"Leistung171":168.01,"Leistung172":991.56,"Leistung173":44.95},"Wirkleistung_Lieferung":{"Leistung270":0,"Leistung271":0,"Leistung272":0,"Leistung273":0},"Kwh_Bezug":{"Kwh180":0.49692799999866,"Kwh181":0.48999999999978,"Kwh182":0},"Kwh_Lieferung":{"Kwh280":0,"Kwh281":0,"Kwh282":0},"Betrag_Bezug":{"Betrag180":0.13968646079962,"Betrag181":0,"Betrag182":0,"Waehrung":"EUR"},"Betrag_Lieferung":{"Betrag280":0,"Betrag281":0,"Betrag282":0,"Waehrung":"EUR"},"DiffBezugLieferung":{"Betrag":-0.13968646079962}}';
+		//$data = '{"product":"Emlog - Electronic MeterLog","version":1.08,"Zaehlerstand_Bezug":{"Stand180":8206.0674551,"Stand181":8198.35,"Stand182":1.11},"Zaehlerstand_Lieferung":{"Stand280":0,"Stand281":0,"Stand282":0},"Wirkleistung_Bezug":{"Leistung170":1204.52,"Leistung171":168.01,"Leistung172":991.56,"Leistung173":44.95},"Wirkleistung_Lieferung":{"Leistung270":0,"Leistung271":0,"Leistung272":0,"Leistung273":0},"Kwh_Bezug":{"Kwh180":0.49692799999866,"Kwh181":0.48999999999978,"Kwh182":0},"Kwh_Lieferung":{"Kwh280":0,"Kwh281":0,"Kwh282":0},"Betrag_Bezug":{"Betrag180":0.13968646079962,"Betrag181":0,"Betrag182":0,"Waehrung":"EUR"},"Betrag_Lieferung":{"Betrag280":0,"Betrag281":0,"Betrag282":0,"Waehrung":"EUR"},"DiffBezugLieferung":{"Betrag":-0.13968646079962}}';
 		
 		$data = json_decode($data, true);
 		
