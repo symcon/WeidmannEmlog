@@ -2,7 +2,7 @@
   "elements":
   [
 	{ "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Address" },
-	{ "type": "Select", "name": "MeterIndex", "caption": "Meter",
+	{ "type": "Select", "name": "Meter", "caption": "Meter",
 	  "options": [
 		{ "caption": "Meter 1", "value": 1 },
 		{ "caption": "Meter 2", "value": 2 },
